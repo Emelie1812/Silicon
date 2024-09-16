@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* .long:hover{
+    color: red;
+} change color while hovering */
+
+.long::first-letter{
+    font-weight: 900;
+    initial-letter: 3;
+}
+.long::first-line{
+    color: rebeccapurple;
+}
+.long::selection {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.content::before{
+    content: 'före ';
+    color: red;
+}
+.content::after{
+    content: ' efter';
+    color: red;
+}
+
+p[data-text]{
+    margin: 2rem;
+    position: relative;
+}
+p[data-text]::after{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    /* opacity: 0; */
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: tranform 200ms ease;
+}
+p[data-text]:hover::after{
+    /* opacity: 1; */
+    transform: scale(1);
+}
