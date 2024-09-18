@@ -37,27 +37,31 @@
     font-size: 16px
   }
 
+  #logo{
+    display: inline-block;
+  }
+
+  header .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    gap: 1.5rem;
+  }
   
 
   .wrapper{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
+    height: 20vh;
+    margin: 10px;
+    padding: 10px;
   }
   
 
   .container{
-    
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
   }
 
   a{
@@ -78,23 +82,11 @@
     color: var(--clr-purple);
   }
 
- 
-
   .btn-primary{
     background-color: var(--clr-purple);
     color: var(--clr-white);
     padding: 12px 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content:end;
-    align-items: center;
-    gap: 8px;
-    
-
     border-radius: 8px;
-    position: absolute;
-    right: 25px;
-    top: 0;
   }
   .btn-primary:hover{
     background-color: var(--clr-gray-600);
@@ -168,6 +160,25 @@
   }
   
   .slider-round:before {
+    border-radius: 50%;
+  }
+
+  .text-container{
+    display: inline-block;
+  }
+
+  .store{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border-radius: 8px;
+    width: 180px;
+    height: 50px;
+  }
+
+  
+  .discover-btn{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
 
