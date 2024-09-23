@@ -140,6 +140,13 @@
   
   /* Hero Section */
 
+  .headline{
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--clr-black);
+    /* width: 526px; */
+    padding-top: 225px;
+  }
   .discover-btn{
     height: 44px;
     width: 44px;
@@ -152,97 +159,7 @@
     color: var(--clr-gray-800);
   }
 
-  .hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "headline images"
-                         "content images";
-    
-    .container{
-      
-    }
-
-    .headline{
-      display: flex;
-      justify-content: center;
-
-      h1{
-        font-size: 56px;
-        font-weight: 800;
-        color: var(--clr-black);
-        
-      }
-    }
-
-    .content{
-      p{
-              
-      }
-
-      .download-btn{
-        width: 180px;
-        height: 50px;
-        padding: 10px 20px;
-        background-color: var(--clr-black);
-        color: var(--clr-white);
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-      }
-
-      .discover-more{
-
-      }
-    }
-
-    .hero-img{
-      .img-back{
-
-      }
-
-      .img-front{
-
-      }
-    }
-  }   
-  /* }
-  .container{
-    max-width: 50%;
-  }
-  .hero h1{
-    font-size: 56px;
-    margin-bottom: 20px;
-    color: var(--clr-black);
-    width: 526px;
-  }
-  .hero p{
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  .download-btn{
-    display: flex;
-    gap: 20px;
-  }
-  .app-store-btn, .google-play-btn{
-    width: 180px;
-    height: 50px;
-    padding: 10px;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    border-radius: 8px;
-    
-  }
-  .discover-btn{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .discover-more a{
-    display: block;
-    margin-top: 40px;
-    text-decoration: none;
-  } */
+ 
 
   /* Brands Styles */
   
