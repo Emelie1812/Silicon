@@ -40,6 +40,10 @@
     font-style: normal;
     color: var(--clr-gray-800);
   }
+  .container{
+    padding: 20px 10%;
+  }
+
 
   /* Header Styles */
   header{
@@ -53,11 +57,7 @@
     grid-template-columns: auto 1fr auto auto;
     gap: 5rem;
   }
-
-  #logo{
-    
-  }
-  
+ 
   nav{
     display: flex;
     align-items: center;
@@ -144,7 +144,6 @@
     font-size: 56px;
     font-weight: 800;
     color: var(--clr-black);
-    /* width: 526px; */
     padding-top: 225px;
   }
   .discover-btn{
