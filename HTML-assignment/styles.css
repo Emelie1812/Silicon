@@ -139,14 +139,74 @@
   }
   
   /* Hero Section */
-  .hero{
+
+  .discover-btn{
+    height: 44px;
+    width: 44px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 60px 10%;
-    
+    border-radius: 50%;
+    border: 1px solid var(--clr-gray-600);
+    background-color: var(--clr-white);
+    color: var(--clr-gray-800);
   }
-  .hero-text{
+
+  .hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline images"
+                         "content images";
+    
+    .container{
+      
+    }
+
+    .headline{
+      display: flex;
+      justify-content: center;
+
+      h1{
+        font-size: 56px;
+        font-weight: 800;
+        color: var(--clr-black);
+        
+      }
+    }
+
+    .content{
+      p{
+              
+      }
+
+      .download-btn{
+        width: 180px;
+        height: 50px;
+        padding: 10px 20px;
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .discover-more{
+
+      }
+    }
+
+    .hero-img{
+      .img-back{
+
+      }
+
+      .img-front{
+
+      }
+    }
+  }   
+  /* }
+  .container{
     max-width: 50%;
   }
   .hero h1{
@@ -170,22 +230,22 @@
     background-color: var(--clr-black);
     color: var(--clr-white);
     border-radius: 8px;
-    text-decoration: none;
-    font-size: 14px;
+    
   }
-  .scroll-btn{
+  .discover-btn{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: inline-block;
   }
-  .scroll-down a{
+  .discover-more a{
     display: block;
     margin-top: 40px;
     text-decoration: none;
-  }
+  } */
 
   /* Brands Styles */
+  
   .container{
     display: flex;
     justify-content: space-between;
@@ -202,7 +262,7 @@
     align-items: center;
     padding: 2rem;
   }
-
+  
   /* Footer Styles */
   footer{
     display: flex;
