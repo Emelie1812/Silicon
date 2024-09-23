@@ -178,6 +178,19 @@
     align-items: center;
     padding: 2rem;
   }
+
+  /* FEATURES STYLING */
+
+  .features-logo{
+    border-radius: 8px;
+    background-color: var(--clr-gray-300);
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   /* Footer Styles */
   footer{
