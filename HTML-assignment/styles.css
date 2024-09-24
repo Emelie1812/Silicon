@@ -186,6 +186,12 @@
     .container{
       padding-bottom: 10rem;
     }
+    h1{
+      color: var(--clr-black);
+      font-size: 40px;
+      font-weight: 800;
+      padding-bottom: 1.5rem;
+    }
   }
   .features-logo{
     border-radius: 8px;
