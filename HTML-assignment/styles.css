@@ -197,6 +197,12 @@
       color: var(--clr-gray-600);
       font-size: 18px;
     }
+    .card{
+      display: flex;
+      flex-direction: column;
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
   }
   .features-logo{
     border-radius: 8px;
