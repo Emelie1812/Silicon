@@ -191,6 +191,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* SLIDER STYLING */
+
+  .slider{
+    background: var(--linear-gradient);
+  }
   
   /* Footer Styles */
   footer{
