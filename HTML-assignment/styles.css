@@ -195,7 +195,7 @@
   /* SLIDER STYLING */
 
   .slider{
-    background: var(--linear-gradient);
+    background-color: var(--clr-primary);
   }
   
   /* Footer Styles */
