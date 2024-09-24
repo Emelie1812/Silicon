@@ -192,6 +192,11 @@
       font-weight: 800;
       padding-bottom: 1.5rem;
     }
+    p{
+      display: inline;
+      color: var(--clr-gray-600);
+      font-size: 18px;
+    }
   }
   .features-logo{
     border-radius: 8px;
