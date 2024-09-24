@@ -191,6 +191,9 @@
     align-items: center;
     justify-content: center;
   }
+  .feature-wrapper{
+    padding-left: 20rem;
+  }
 
   /* SLIDER STYLING */
 
