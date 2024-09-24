@@ -41,13 +41,13 @@
     color: var(--clr-gray-800);
   }
   .container{
-    padding: 20px 10%;
+    padding: 40px 20%;
   }
 
 
   /* Header Styles */
   header{
-    padding: 20px 10%;
+    /* padding: 20px 10%; */
     background: var(--linear-gradient);
   }
 
@@ -202,6 +202,10 @@
       font-size: 40px;
       font-weight: 800;
       text-align: center;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
     }
     h2{
       color: var(--clr-black);
