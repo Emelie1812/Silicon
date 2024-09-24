@@ -181,6 +181,12 @@
 
   /* FEATURES STYLING */
 
+  .features{
+
+    .container{
+      padding-bottom: 10rem;
+    }
+  }
   .features-logo{
     border-radius: 8px;
     background-color: var(--clr-gray-300);
