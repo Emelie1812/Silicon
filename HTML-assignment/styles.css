@@ -43,7 +43,17 @@
   .container{
     padding: 40px 20%;
   }
-
+  img{
+    display: block;
+    width: 100%;
+  }
+  input,button,textarea,select{
+    font: inherit;
+  }
+  h1,h2,h3,h4,h5,h6{
+    text-wrap: balance;
+    font-weight: 800;
+  }
 
   /* Header Styles */
   header{
@@ -142,7 +152,6 @@
 
   .headline{
     font-size: 56px;
-    font-weight: 800;
     color: var(--clr-black);
     padding-top: 225px;
   }
@@ -201,7 +210,6 @@
       display: flex;
       flex-direction: column;
       padding-top: 5rem;
-      padding-bottom: 3rem;
     }
   }
   .features-logo{
