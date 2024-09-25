@@ -58,7 +58,7 @@ ol, ul{
     list-style: none;
 }
 
-
+/* UTILITY CLASSES */
 .container{
     width: 100%;
     margin-inline: auto;
@@ -83,6 +83,13 @@ ol, ul{
 .space-y-2{
 
 }
+.space-y-3{
+
+}
+.space-y-4{
+
+}
+
 .sc-only{
     position: absolute;
     width: 1px;
@@ -102,3 +109,117 @@ ol, ul{
 .text-lg{
     font-size: 1.125rem;
 }
+
+.btn{  
+    padding: .6em 1.8em;   
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    border-radius: .5rem;
+    font-size: .9rem;
+
+    transition: background-color 150ms ease;
+
+    &:hover{
+       background-color: var(--clr-gray-500); 
+    }
+}
+
+#darkmode-toggle{
+        position: absolute;
+        right: 12rem;
+        top: .6rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p{
+            color: var(--clr-gray-700);
+            font-weight: 600;
+        }
+    }
+
+.toggle-switch{
+    --_w: 46px;
+    --_h: 24px;
+    
+    position: relative;
+    flex-shrink: 0;
+    width: var(--_w);
+    height: var(--_h);
+    display: inline-block;
+    
+
+    input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .slider{
+        position: absolute;
+        inset: 0;
+        background-color: var(--clr-gray-600);
+        border-radius: 100vw;
+        cursor: pointer;
+
+        transition: all 250ms;
+    }
+
+    .slider::after{
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        content: '';
+        height: calc(100% - 4px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--clr-white);
+
+        transition: all 250ms;
+    }
+
+    input[type="checkbox"]:checked ~ .slider::after {
+        left: calc(100% - var(--_h) + 2px);
+    }
+    input[type="checkbox"]:checked ~ .slider {
+        background-color: var(--clr-purple);
+    }
+}
+
+/* NAVBAR START*/
+
+.navbar{
+    padding-block: 1rem;
+
+    .container{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+    }
+    .nav-link{
+        margin-left: 3rem;
+        display: flex;
+        align-items: center;
+        color: var(--clr-gray-800);
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover,
+        &:focus-visible{
+            color: var(--clr-purple);
+        }
+    }
+    
+    i{
+       padding-right: .4rem;
+    }
+}
+
+/* NAVBAR END */

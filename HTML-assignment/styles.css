@@ -75,7 +75,7 @@
   }
   
 /* General toggle switch container */
-#darkmode-toggle-switch {
+#darkmode-toggle {
   position: relative;
   width: 60px;
   height: 30px;
@@ -91,7 +91,7 @@
 }
 
 /* Label acts as the visible switch */
-.toggle-label {
+.slider {
   position: absolute;
   cursor: pointer;
   background-color: var(--clr-gray-500); /* Default background color */
@@ -102,7 +102,7 @@
 }
 
 /* Circular slider inside the switch */
-.toggle-label::before {
+.slider::before {
   content: "";
   position: absolute;
   left: 5px;
@@ -115,11 +115,11 @@
 }
 
 /* Change background and position when checkbox is checked */
-.toggle-input:checked + .toggle-label {
+.toggle-input:checked + .slider {
   background-color: var(--clr-purple); /* Color when toggle is on */
 }
 
-.toggle-input:checked + .toggle-label::before {
+.toggle-input:checked + .slider::before {
   transform: translateX(30px); /* Move the circle to the right */
 }
 
@@ -143,8 +143,7 @@
   .hero{
 
     .container{
-      display: flex;
-      flex-direction: column;
+      display: flex;      
     }
   }
   .headline{
