@@ -34,7 +34,7 @@
 
 body{
     font-family: "Manrope", sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     background-color: var(--clr-white);
 }
 
@@ -128,6 +128,27 @@ ol, ul{
     &:hover{
        background-color: var(--clr-gray-500); 
     }
+}
+.discover-more{
+    display: inline-flex;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.discover-btn{
+    background-color: var(--clr-white);
+    color: var(--clr-gray-800);
+
+    box-shadow: 0 0 10px #00000022, 3px 5px 4px #0000001f;
+
+    
 }
 
 #darkmode-toggle{
@@ -223,3 +244,44 @@ ol, ul{
 }
 
 /* NAVBAR END */
+
+/* HERO START */
+
+.hero{
+    background: var(--linear-gradient);
+    padding-top: 6rem;
+
+    .download-btn{
+        display: flex;
+        gap: 3rem;
+        
+    }
+
+    .store-btn{
+        background-color: var(--clr-black);
+        width: 11.25rem;
+        height: 3.25rem;
+        border-radius: .5rem;
+        padding: .8em 1em;
+
+        img{
+            height: 2em;
+        }
+    }
+
+    .more{
+
+        span{
+            font-size: 0.875;
+            color: var(--clr-gray-700);
+        }
+    }
+
+    .hero-img{
+        width: 45rem;
+        height: 60rem;
+    }
+}
+
+/* HERO END */
+
