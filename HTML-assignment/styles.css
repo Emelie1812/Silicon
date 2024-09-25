@@ -39,6 +39,7 @@
     font-weight: 400;
     font-style: normal;
     color: var(--clr-gray-800);
+    line-height: 1.8;
   }
   .container{
     padding: 40px 20%;
