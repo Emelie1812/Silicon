@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --clr-primary: #F3F6FF;
+    --clr-gray-200: #EFF2FC;
+    --clr-gray-300: #E2E5F1;
+    --clr-gray-400: #D4D7E5;
+    --clr-gray-500: #B4B7C9;
+    --clr-gray-600: #9397AD;
+    --clr-gray-700: #565973;
+    --clr-gray-800: #33354D;
+    --clr-black: #0B0F19;
+    --clr-purple: #6366F1;
+    --clr-red: #EF4444;
+    --clr-green: #22C55E;
+    --clr-yellow: #FFBA08;
+    --clr-blue: #4C82F7;
+    --clr-white: #fff;
+    --linear-gradient: linear-gradient(355deg, 
+    rgba(99,102,241,0.1) 0%, 
+    rgba(218,70,239,0.05) 42%, 
+    rgba(241,244,253,0.07) 83%
+    );
+
+    --container-padding: 1rem;
+    
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    line-height: 1.6;
+    background-color: var(--clr-white);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+    color: var(--clr-black);
+    font-weight: 800;
+}
+
+.text-lg{
+    font-size: 1.125rem;
+}
