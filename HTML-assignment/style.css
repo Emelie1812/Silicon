@@ -135,7 +135,7 @@ ol, ul{
     aspect-ratio: 1;
     border-radius: 50%;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     text-decoration: none;
     background-color: transparent;
     border: 0;
@@ -148,7 +148,6 @@ ol, ul{
 
     box-shadow: 0 0 10px #00000022, 3px 5px 4px #0000001f;
 
-    
 }
 
 #darkmode-toggle{
@@ -249,7 +248,17 @@ ol, ul{
 
 .hero{
     background: var(--linear-gradient);
-    padding-top: 6rem;
+    padding-top: 10rem;
+    text-align: start;
+
+    h1{
+        width: 50%;
+    }
+
+    .content{
+        width: 40%;
+        margin-top: 2rem;
+    }
 
     .download-btn{
         display: flex;
@@ -262,26 +271,46 @@ ol, ul{
         width: 11.25rem;
         height: 3.25rem;
         border-radius: .5rem;
-        padding: .8em 1em;
-
-        img{
-            height: 2em;
-        }
+        padding: .6em 1.5em;
+       
     }
 
     .more{
-
+        margin-top: 13rem; 
+    
         span{
             font-size: 0.875;
             color: var(--clr-gray-700);
         }
     }
 
-    .hero-img{
-        width: 45rem;
-        height: 60rem;
-    }
+
+
+   
 }
 
 /* HERO END */
 
+/* BRANDS START */
+
+#brands{
+    display: block;
+    padding-block: .5rem;
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+
+    .logo-card{
+        border: 1px solid var(--clr-gray-300);
+        border-radius: .5rem;
+        padding: 2rem;
+        display: grid;
+        place-items: center;
+        margin-top: 1.5rem;
+    }
+}
+
+/* BRANDS END */
