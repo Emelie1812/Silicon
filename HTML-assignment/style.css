@@ -80,14 +80,18 @@ ol, ul{
         max-width: 1320px;
     }
 }
-.space-y-2{
 
+.space-y-1 > * + *{
+    margin-top: 1rem;
 }
-.space-y-3{
-
+.space-y-2 > * + *{
+    margin-top: 2rem;
 }
-.space-y-4{
-
+.space-y-3  > * + *{
+    margin-top: 3rem;
+}
+.space-y-4 > * + *{
+    margin-top: 4rem;
 }
 
 .sc-only{
@@ -276,7 +280,7 @@ ol, ul{
     }
 
     .more{
-        margin-top: 13rem; 
+        margin-top: 15rem; 
     
         span{
             font-size: 0.875;
@@ -284,7 +288,14 @@ ol, ul{
         }
     }
 
+    .hero-img{
+        display: block;
+        width: 60%;
 
+        right: 0;
+        bottom: 0;
+        
+    }
 
    
 }
@@ -314,3 +325,76 @@ ol, ul{
 }
 
 /* BRANDS END */
+
+/* FEATURES START */
+
+#features{
+    text-align: start;
+    padding-block: 7.5rem;
+
+    .container{
+        display: flex;
+        gap: 4rem;
+    }
+
+    .iphone-features{
+        display: block;
+    }
+
+    .feature-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 3rem;
+        padding-top: 5rem;
+    }   
+
+    .feature-card{
+        display: flex;
+        text-align: start;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .icon-container{
+        background-color: var(--clr-primary);
+        border-radius: .5rem;
+        padding: 1rem;
+        flex-shrink: 0;
+    }
+
+    .features-content{
+        flex: 1;
+    }
+}
+/* FEATURES END */
+
+/* SLIDER START */
+
+.slider{
+    text-align: center;
+    background-color: var(--clr-primary);
+
+
+    h2{
+        padding-top: 5rem;
+        font-size: 2.5rem;
+        color: var(--clr-black);
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    h3{
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    p{
+        text-wrap: balance;
+        padding-bottom: 6rem;
+    }
+}
+/* SLIDER END */
