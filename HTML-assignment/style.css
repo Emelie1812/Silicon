@@ -401,6 +401,32 @@ ol, ul{
 
 /* TRANSFER START */
 
+.transfer{
 
+    .transfer-content{
+        padding-right: 2.5rem;
+    }
+
+    .h1{
+        padding-top: 13rem;
+        padding-bottom: 3rem;
+    }
+
+    .check{
+        color: var(--clr-purple);
+        padding-right: 1rem;
+    }
+
+    .learn-more{
+        margin-top: 2.5rem;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        background-color: var(--clr-purple);
+        color: var(--clr-white);
+    }
+    .arrow{
+        padding-left: .3rem;
+    }
+}
 
 /* TRANSFER END */
