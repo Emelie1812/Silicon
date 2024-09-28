@@ -405,6 +405,7 @@ ol, ul{
 
     .transfer-content{
         padding-right: 2.5rem;
+        
     }
 
     .h1{
@@ -423,10 +424,33 @@ ol, ul{
         padding: .5rem 1.5rem .5rem 1.5rem;
         background-color: var(--clr-purple);
         color: var(--clr-white);
+
+        &:hover{
+            background-color: var(--clr-gray-500);
+        }
     }
     .arrow{
         padding-left: .3rem;
     }
+
+    .forecast-img{
+        position: absolute;
+        padding-top: 1rem;    
+    }
+
+    .contact-img{
+        position: absolute;
+        right: 0;
+    }
 }
 
 /* TRANSFER END */
+
+/* FOOTER START */
+
+    footer{
+        
+        bottom: 0;
+    }
+
+/* FOOTER END */
