@@ -260,8 +260,11 @@ ol, ul{
     }
 
     .content{
-        width: 40%;
+        /* width: 40%; */
         margin-top: 2rem;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .download-btn{
@@ -293,9 +296,9 @@ ol, ul{
         width: 60%;
 
         right: 0;
-        bottom: 0;
-        
+        bottom: 0;   
     }
+    
 
    
 }
@@ -429,6 +432,7 @@ ol, ul{
         padding: .5rem 1.5rem .5rem 1.5rem;
         background-color: var(--clr-purple);
         color: var(--clr-white);
+        border: 0;
 
         &:hover{
             background-color: var(--clr-gray-500);
@@ -563,14 +567,73 @@ ol, ul{
         .text-contact{
             color: var(--clr-green);
         }
+
+        .faq-card{
+            /* max-height: 4rem; */
+            max-width: 46rem;
+            padding: .5rem;
+            border-radius: .5rem;
+        }
+        .answer{
+            font-size: 0.875rem;
+            
+        }
     }
 /* QUESTIONS END */
+
+/* SUBSCRIBE START */
+
+
+    .subscribe{
+        background-color: var(--clr-primary);
+
+        img{
+            max-width: 3rem;
+        }
+       
+    }
+
+    .subscribe-wrapper{
+        height: 15svh;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto 1fr;
+        gap: 2rem;
+    }
+
+    .input-group{
+        display: flex;
+        position: relative;
+    }
+    .form-input{
+        border: 1px solid var(--clr-gray-400);
+        border-radius: .5em 0 0 .5em;
+        padding: .3em;
+        padding-left: 2rem;
+    }
+    .form-btn{
+        background-color: var(--clr-purple);
+        color: var(--clr-white);
+        padding: .5em 2em;
+        border: 0;
+    }
+
+    .envelope{
+        position: absolute;
+        top: 50%;
+        left: .5rem;
+
+        transform: translateY(-50%);
+    }
+
+/* SUBSCRIBE END */
 
 /* FOOTER START */
 
     footer{
         text-align: center;
         bottom: 0;
+        padding: 1rem;
     }
 
 /* FOOTER END */
